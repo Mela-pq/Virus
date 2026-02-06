@@ -31,9 +31,6 @@ pausamos el sistema y con el comando cat revisamos el contenido de events.txt.
 
 ![alt text](image-2.png)
 
-para el texto completo ejecutamos el siguiente comando.
-
-![alt text](image-3.png)
 
 
 
