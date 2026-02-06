@@ -1,28 +1,29 @@
 import keyboard
-#importamos la libreria
-# Graba los eventos del teclado hasta que se presione ESC
-recorded = keyboard.record(until='esc')
-#variable igual a teclado .record graba las teclas y el util 
-# permite que se termine el programa con esc
-# Reproduce los eventos grabados a tres veces la velocidad
-keyboard.play(recorded)
-#del teclado encendido recoberes llama a la
-# variable escritura rapida de lo que ingrese 
 
-
-
-
-
-
-
-
+with open("texto.txt","a") as archivo:
+    letras =keyboard.record(until="esc")
+    for l in letras:
+        if l.event_type =="down": 
+            if l.name=="space":
+                archivo.write(" ")
+            elif l.name=="enter":
+                archivo.write(" \n")
+            elif len(l.name)==1:
+                archivo.write(l.name)
             
-        
+                
+  
+
+
+     
+
+
 
     
 
-
-
-
-
-
+             
+             
+             
+             
+    
+    
